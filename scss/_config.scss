@@ -1,0 +1,16 @@
+
+$website-width: 1280px;
+$main-color: #000000;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #fefcfc;
+$bg-image: url('../dist/img/black-bricks-background.jpeg');
+
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
